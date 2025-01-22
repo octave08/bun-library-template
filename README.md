@@ -3,6 +3,7 @@
 A starter template for node library built with bun.
 
 ## Features
+- 🔄 Supports both ESM and CJS
 - 🛠️ Formatting and linting with Biome
 - 🧪 Inclusive Built-in Bun Test Runner
 - 👊 Lefthook for Git hooks
@@ -16,7 +17,6 @@ A starter template for node library built with bun.
 ```bash
 $ bun install
 ```
-Run
 ```bash
 $ bun test
 ```
