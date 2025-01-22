@@ -20,6 +20,7 @@ jobs:
 
   publish:
     runs-on: ubuntu-latest
+    needs: release
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -29,5 +30,10 @@ jobs:
         with:
           bun-version: latest
 
+      - name: Build project
+        run: bun build
+
       - name: Run publish
         run: bun publish
+        env:
+          NPM_CONFIG_TOKEN: "${{ secrets.NPM_TOKEN }}"

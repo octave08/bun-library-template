@@ -1,5 +1,5 @@
 {
-  "name": "bun-library-starter",
+  "name": "bun-library-template",
   "version": "0.0.0",
   "type": "module",
   "exports": {
@@ -8,10 +8,9 @@
     "require": "./dist/index.cjs"
   },
   "scripts": {
-    "dev": "bun ./src/index.ts",
     "build": "bun ./scripts/build.ts",
-    "check": "biome check",
-    "test": "bun test"
+    "test": "bun test",
+    "check": "biome check"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
