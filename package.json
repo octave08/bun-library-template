@@ -4,7 +4,8 @@
 	"type": "module",
 	"scripts": {
 		"dev": "bun ./src/index.ts",
-		"check": "biome check"
+		"check": "biome check",
+		"test": "bun test"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
