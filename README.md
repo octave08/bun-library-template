@@ -5,6 +5,7 @@ A starter template for node library built with bun.
 ## Features
 - 🛠️ Formatting and linting with Biome
 - 🧪 Inclusive Built-in Bun Test Runner
+- 👊 Lefthook for Git hooks
 - 🏃‍➡️ Github Actions for CI/CD
 
 
