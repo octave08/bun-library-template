@@ -8,6 +8,7 @@
     "require": "./dist/index.cjs"
   },
   "scripts": {
+    "watch": "bun build ./src/index.ts --outdir ./dist --watch",
     "build": "bun ./scripts/build.ts",
     "test": "bun test",
     "check": "biome check"
