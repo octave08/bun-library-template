@@ -1,21 +1,27 @@
 {
   "name": "bun-library-starter",
   "version": "0.0.0",
-  "module": "index.ts",
   "type": "module",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs"
+  },
   "scripts": {
     "dev": "bun ./src/index.ts",
+    "build": "bun ./scripts/build.ts",
     "check": "biome check",
-    "test": "bun test",
-    "release": "light-release"
+    "test": "bun test"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "@types/bun": "latest",
+    "bun-plugin-isolated-decl": "^0.1.7",
     "lefthook": "^1.10.10",
-    "light-release": "^2.4.2"
+    "light-release": "^2.4.2",
+    "oxc-transform": "^0.47.1"
   },
   "peerDependencies": {
-    "typescript": "^5.0.0"
+    "typescript": "5.7.3"
   }
 }
