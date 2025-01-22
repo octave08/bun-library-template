@@ -7,6 +7,7 @@ A starter template for node library built with bun.
 - 🧪 Inclusive Built-in Bun Test Runner
 - 👊 Lefthook for Git hooks
 - 🏃‍➡️ Github Actions for CI/CD
+- 📦 Release automation with Light Release
 
 
 ## Getting started
